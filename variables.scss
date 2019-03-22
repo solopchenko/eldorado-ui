@@ -13,3 +13,17 @@ $interfaceGray: #D9D9D9;
 $interfaceGreen: #76BC21;
 $interfaceRed: #E01E3E;
 $interfaceWhite: #FFFFFF;
+
+:root {
+  
+  --border-radius: 2px;
+
+  --price-font-family: DINPro, Helvetica, Arial, sans-serif;
+  --price--color-main: #{$textMain};
+  --price--color-old: #{$textLight};
+  --price--color-discount: #{$textWhite};
+  --price-font-size-l: 48px;
+  --price-font-size-m: 34px;
+  --price-font-size-s: 30px;
+
+}

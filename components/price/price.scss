@@ -1,0 +1,37 @@
+.price {
+  font-family: var(--price-font-family);
+  font-size: var(--price-font-size-m);
+
+  &__old-price {
+    color: var(--price--color-old);
+    text-decoration: line-through;
+    font-size: 0.6em;
+  }
+
+  &__current-price {
+    color: var(--price--color-main);
+  }
+
+  &__discount {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 2px 5px;
+    border-radius: var(--border-radius);
+    background-color: var(--color-green);
+    color: var(--price--color-discount);
+    font-size: 0.8em;
+    letter-spacing: 0.05em;
+  }
+
+  &--size_l {
+    font-size: var(--price-font-size-l);
+  }
+
+  &--size_m {
+    font-size: var(--price-font-size-m);
+  }
+
+  &--size_s {
+    font-size: var(--price-font-size-s);
+  }
+}
