@@ -1,0 +1,28 @@
+.container {
+  width: 80%;
+  max-width: 1200px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.section {
+  margin: 20px 0;
+}
+
+.example {
+
+  &__component {
+
+    &--inline {
+      margin-right: 20px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &--inline {
+    display: flex;
+    align-items: flex-end;
+  }
+}
