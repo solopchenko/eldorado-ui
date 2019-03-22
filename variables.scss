@@ -35,6 +35,11 @@ $interfaceWhite: #FFFFFF;
   --text-color-yellow: #{$textYellow};
   --text-color-white: #{$textWhite};
 
+  --color-green: #{$interfaceGreen};
+  --color-red: #{$interfaceRed};
+  --color-gray: #{$interfaceGray};
+  --color-white: #{$interfaceWhite};
+
   --price-font-family: DINPro, Helvetica, Arial, sans-serif;
   --price--color-main: #{$textMain};
   --price--color-old: #{$textLight};
