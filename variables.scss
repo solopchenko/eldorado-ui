@@ -15,8 +15,25 @@ $interfaceRed: #E01E3E;
 $interfaceWhite: #FFFFFF;
 
 :root {
-  
+
   --border-radius: 2px;
+
+  --main-font-family: Graphik_LC, Helvetica, Arial, sans-serif;
+  --font-introduction: normal 18px/1.4 var(--main-font-family);
+  --font-section: normal 16px/1.4 var(--main-font-family);
+  --font-title: normal 14px/1.4 var(--main-font-family);
+  --font-main: normal 12px/1.4 var(--main-font-family);
+  --font-secondary: normal 11px/1.4 var(--main-font-family);
+
+  --text-color-main: #{$textMain};
+  --text-color-dark: #{$textDark};
+  --text-color-medium: #{$textMedium};
+  --text-color-gray: #{$textGray};
+  --text-color-light: #{$textLight};
+  --text-color-green: #{$textGreen};
+  --text-color-red: #{$textRed};
+  --text-color-yellow: #{$textYellow};
+  --text-color-white: #{$textWhite};
 
   --price-font-family: DINPro, Helvetica, Arial, sans-serif;
   --price--color-main: #{$textMain};
