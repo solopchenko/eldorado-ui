@@ -1,0 +1,132 @@
+.button {
+  display: inline-block;
+  min-height: 50px;
+  min-width: 120px;
+  box-sizing: border-box;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 0 20px;
+  font-family: var(--main-font-family);
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+  background-color: var(--color-green);
+  transition: all var(--time) ease;
+
+  &:hover {
+    background-color: saturate($interfaceGreen, 10%);
+  }
+
+  &:active {
+    background-color: desaturate($interfaceGreen, 10%);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: lighten($interfaceGreen, 20%);
+  }
+
+  &--size_l {
+    min-height: 50px;
+    font-size: 16px;
+    padding: 0 20px;
+  }
+
+  &--size_m {
+    min-height: 42px;
+    font-size: 14px;
+    padding: 5px 15px;
+  }
+
+  &--size_s {
+    min-height: 36px;
+    font-size: 12px;
+    padding: 0 10px;
+  }
+
+  &--wide {
+    width: 100%;
+  }
+
+  &--uppercase {
+    font-family: var(--price-font-family);
+    text-transform: uppercase;
+  }
+
+  &--color_green {
+    background-color: var(--color-green);
+
+    &:hover {
+      background-color: saturate($interfaceGreen, 10%);
+    }
+
+    &:active {
+      background-color: desaturate($interfaceGreen, 10%);
+    }
+
+    &:disabled {
+      background-color: lighten($interfaceGreen, 20%);
+    }
+  }
+
+  &--color_outline-green {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-green);
+    color: var(--text-color-green);
+
+    &:hover {
+      color: var(--text-color-white);
+      background-color: saturate($interfaceGreen, 10%);
+    }
+
+    &:active {
+      color: var(--text-color-white);
+      background-color: desaturate($interfaceGreen, 10%);
+    }
+
+    &:disabled {
+      color: var(--text-color-green);
+      background-color: var(--color-white);
+    }
+  }
+
+  &--color_red {
+    background-color: var(--color-red);
+
+    &:hover {
+      background-color: saturate($interfaceRed, 10%);
+    }
+
+    &:active {
+      background-color: darken($interfaceRed, 5%);
+    }
+
+    &:disabled {
+      background-color: lighten($interfaceRed, 20%);
+    }
+  }
+
+  &--color_outline-red {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-red);
+    color: var(--text-color-red);
+
+    &:hover {
+      color: var(--text-color-white);
+      background-color: saturate($interfaceRed, 10%);
+    }
+
+    &:active {
+      color: var(--text-color-white);
+      background-color: desaturate($interfaceRed, 10%);
+    }
+
+    &:disabled {
+      color: var(--text-color-red);
+      background-color: var(--color-white);
+    }
+  }
+}
