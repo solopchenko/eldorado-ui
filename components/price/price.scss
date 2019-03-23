@@ -1,11 +1,13 @@
 .price {
   font-family: var(--price-font-family);
   font-size: var(--price-font-size-m);
+  white-space: nowrap;
+  line-height: 1.2;
 
   &__old-price {
     color: var(--price--color-old);
     text-decoration: line-through;
-    font-size: 0.6em;
+    font-size: 24px;
   }
 
   &__current-price {
@@ -15,23 +17,39 @@
   &__discount {
     display: inline-block;
     margin-left: 10px;
-    padding: 2px 5px;
+    padding: 1px 5px;
     border-radius: var(--border-radius);
     background-color: var(--color-green);
-    color: var(--price--color-discount);
-    font-size: 0.8em;
-    letter-spacing: 0.05em;
+    color: var(--text-color-white);
+    letter-spacing: 0.5px;
+    font-size: 15px;
   }
 
   &--size_l {
-    font-size: var(--price-font-size-l);
+    font-size: 40px;
+
+    .price__old-price {
+      font-size: 24px;
+    }
   }
 
   &--size_m {
-    font-size: var(--price-font-size-m);
+    font-size: 34px;
+
+    .price__old-price {
+      font-size: 22px;
+    }
   }
 
   &--size_s {
-    font-size: var(--price-font-size-s);
+    font-size: 30px;
+
+    .price__old-price {
+      font-size: 20px;
+    }
+
+    .price__discount {
+      font-size: 15px;
+    }
   }
 }
