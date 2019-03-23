@@ -13,6 +13,7 @@ $interfaceGray: #D9D9D9;
 $interfaceGreen: #76BC21;
 $interfaceRed: #E01E3E;
 $interfaceWhite: #FFFFFF;
+$interfaceYellow: #FFE066;
 
 :root {
 
@@ -39,6 +40,7 @@ $interfaceWhite: #FFFFFF;
   --color-red: #{$interfaceRed};
   --color-gray: #{$interfaceGray};
   --color-white: #{$interfaceWhite};
+  --color-yellow: #{$interfaceYellow};
 
   --price-font-family: DINPro, Helvetica, Arial, sans-serif;
   --price--color-main: #{$textMain};
@@ -47,5 +49,8 @@ $interfaceWhite: #FFFFFF;
   --price-font-size-l: 48px;
   --price-font-size-m: 34px;
   --price-font-size-s: 30px;
+
+  --time: 2s;
+  --border-radius: 2px;
 
 }

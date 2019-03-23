@@ -129,4 +129,21 @@
       background-color: var(--color-white);
     }
   }
+
+  &--color_yellow {
+    background-color: var(--color-yellow);
+    color: var(--text-color-main);
+
+    &:hover {
+      background-color: saturate($interfaceYellow, 10%);
+    }
+
+    &:active {
+      background-color: darken($interfaceYellow, 5%);
+    }
+
+    &:disabled {
+      background-color: lighten($interfaceYellow, 20%);
+    }
+  }
 }
