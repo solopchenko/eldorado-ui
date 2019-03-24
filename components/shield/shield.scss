@@ -1,0 +1,40 @@
+.shield {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  min-height: 50px;
+  padding: 0 10px;
+  border: 1px solid var(--color-gray);
+  background-color: var(--color-white);
+  color: var(--text-color-main);
+  text-decoration: none;
+
+  &__icon {
+    max-height: 40px;
+    margin-right: 10px;
+  }
+
+  &__text {
+    font: var(--font-main);
+  }
+
+  &--center {
+    justify-content: center;
+  }
+
+  &--wide {
+    width: 100%;
+  }
+
+  &--size_s {
+    width: 180px;
+  }
+
+  &--size_m {
+    width: 200px;
+  }
+
+  &--size_l {
+    width: 260px;
+  }
+}
