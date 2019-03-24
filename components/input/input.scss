@@ -4,6 +4,11 @@
   margin: var(--input-padding) 0;
   font: var(--font-main);
 
+  &__label {
+    display: inline-block;
+    margin: var(--input-padding) 0;
+  }
+
   &__text {
     display: block;
     box-sizing: border-box;
@@ -18,6 +23,7 @@
       position: absolute;
       top: var(--input-padding);
       left: var(--input-padding);
+      margin: 0;
       transition: all var(--time) ease;
       opacity: 1;
       pointer-events: none;
@@ -56,9 +62,11 @@
     opacity: 0;
 
     & + .input__label {
+      display: inline;
       position: relative;
-      cursor: pointer;
+      margin: 0;
       padding-left: 1.5em;
+      cursor: pointer;
     }
 
     & + .input__label:before {
@@ -97,6 +105,28 @@
 
     &:checked + .input__label:before {
       background-image: url('./components/input/radio--green-checked.svg');
+    }
+  }
+
+  &__select {
+    width: 100%;
+    appearance: none;
+    user-select: none;
+    -webkit-appearance: none;
+    text-overflow: ellipsis;
+    outline: none;
+    padding: var(--input-padding);
+    border: 1px solid var(--color-gray);
+    border-radius: 2px;
+    background-color: var(--color-white);
+    background-image: url('./components/input/select--gray.svg');
+    background-position: calc(100% - var(--input-padding)) center;
+    background-repeat: no-repeat;
+    background-size: 1em;
+    font-size: 1em;
+
+    &--multiply {
+      background-image: none;
     }
   }
 
