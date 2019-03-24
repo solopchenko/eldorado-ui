@@ -1,0 +1,53 @@
+.input {
+  position: relative;
+  box-sizing: border-box;
+  margin: var(--input-padding) 0;
+  font: var(--font-main);
+
+  &__text {
+    display: block;
+    box-sizing: border-box;
+    margin: 40px 0 10px 0;
+    width: 100%;
+    padding: var(--input-padding);
+    font: inherit;
+    border: 1px solid var(--color-gray);
+    border-radius: 2px;
+
+    & ~ .input__label {
+      position: absolute;
+      top: var(--input-padding);
+      left: var(--input-padding);
+      transition: all var(--time) ease;
+      opacity: 1;
+      pointer-events: none;
+    }
+
+    &:focus ~ .input__label,
+    &:valid ~ .input__label {
+      top: calc(var(--input-padding) * (-2) - 5px);
+      left: 0;
+      opacity: 0.8;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: var(--color-green);
+      box-shadow: 0 0 2px 0 var(--color-green);
+    }
+
+    &--invalid,
+    &--invalid:focus {
+      border-color: var(--color-red);
+      box-shadow: 0 0 2px 0 var(--color-red);
+
+      & ~ .input__label {
+        color: var(--color-red);
+      }
+    }
+  }
+
+  &__error {
+    color: var(--text-color-red);
+  }
+}
