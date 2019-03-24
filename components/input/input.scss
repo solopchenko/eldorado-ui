@@ -1,18 +1,18 @@
 .input {
   position: relative;
   box-sizing: border-box;
-  margin: var(--input-padding) 0;
+  margin: var(--input-margin) 0;
   font: var(--font-main);
 
   &__label {
     display: inline-block;
-    margin: var(--input-padding) 0;
+    margin: var(--input-margin) 0;
   }
 
   &__text {
     display: block;
     box-sizing: border-box;
-    margin: 40px 0 10px 0;
+    margin: calc(1em + var(--input-margin) * 2) 0 var(--input-margin) 0;
     width: 100%;
     padding: var(--input-padding);
     font: inherit;
@@ -31,7 +31,7 @@
 
     &:focus ~ .input__label,
     &:valid ~ .input__label {
-      top: calc(var(--input-padding) * (-2) - 5px);
+      top: calc(-1em - var(--input-margin));
       left: 0;
       opacity: 0.8;
     }
