@@ -121,8 +121,8 @@
             <input class="input__text" type="text" required="">
             <label class="input__label">Текстовое поле</label>
           </div>
-          <div class="input">
-            <input class="input__text input__text--invalid" type="text" required="">
+          <div class="input input--invalid">
+            <input class="input__text" type="text" required="">
             <label class="input__label">Текстовое поле с ошибкой</label>
             <span class="input__error">Текст ошибки</span>
           </div>
@@ -130,23 +130,31 @@
         <h3>Check Box</h3>
         <div class="example">
           <div class="input">
-            <input class="input__checkbox" type="checkbox" id="checkbox1">
+            <input class="input__checkbox" type="checkbox" checked id="checkbox1">
             <label class="input__label" for="checkbox1">Check</label>
           </div>
           <div class="input">
-            <input class="input__checkbox" type="checkbox" checked id="checkbox2">
+            <input class="input__checkbox" type="checkbox" id="checkbox2">
             <label class="input__label" for="checkbox2">Box</label>
+          </div>
+          <div class="input input--invalid">
+            <input class="input__checkbox" type="checkbox" id="checkbox3">
+            <label class="input__label" for="checkbox3">Error</label>
           </div>
         </div>
         <h3>Radio Button</h3>
         <div class="example">
           <div class="input">
-            <input class="input__radio" type="radio" id="radio1" name="radio">
+            <input class="input__radio" type="radio" checked id="radio1" name="radio">
             <label class="input__label" for="radio1">Radio</label>
           </div>
           <div class="input">
             <input class="input__radio" type="radio" id="radio2" name="radio">
             <label class="input__label" for="radio2">Button</label>
+          </div>
+          <div class="input input--invalid">
+            <input class="input__radio" type="radio" id="radio3" name="radio">
+            <label class="input__label" for="radio3">Error</label>
           </div>
         </div>
         <h3>Выпадающие списки</h3>
@@ -159,14 +167,32 @@
               <option class="input__select-option" value="2">Второй</option>
             </select>
           </div>
+          <div class="input input--invalid">
+            <label class="input__label" for="select1error">Выберите один вариант</label>
+            <select class="input__select" id="select1error">
+              <option class="input__select-option" value="0">Выберите</option>
+              <option class="input__select-option" value="1">Первый</option>
+              <option class="input__select-option" value="2">Второй</option>
+            </select>
+            <span class="input__error">Текст ошибки</span>
+          </div>
           <div class="input">
-          <label class="input__label" for="select2">Выберите несколько вариантов</label>
-          <select multiple="" class="input__select input__select--multiply" id="select2">
-            <option class="input__select-option" value="0">Выберите</option>
-            <option class="input__select-option" value="1">Первый</option>
-            <option class="input__select-option" value="2">Второй</option>
-          </select>
-        </div>
+            <label class="input__label" for="select2">Выберите несколько вариантов</label>
+            <select multiple="" class="input__select input__select--multiply" id="select2">
+              <option class="input__select-option" value="0">Выберите</option>
+              <option class="input__select-option" value="1">Первый</option>
+              <option class="input__select-option" value="2">Второй</option>
+            </select>
+          </div>
+          <div class="input input--invalid">
+            <label class="input__label" for="select2error">Выберите несколько вариантов</label>
+            <select multiple="" class="input__select input__select--multiply" id="select2error">
+              <option class="input__select-option" value="0">Выберите</option>
+              <option class="input__select-option" value="1">Первый</option>
+              <option class="input__select-option" value="2">Второй</option>
+            </select>
+            <span class="input__error">Текст ошибки</span>
+          </div>
         </div>
       </div>
     </div>
