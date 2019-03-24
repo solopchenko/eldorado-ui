@@ -47,6 +47,42 @@
     }
   }
 
+  &__checkbox {
+    position: absolute;
+    font-family: inherit;
+    appearance: none;
+    display: none;
+    z-index: -1;
+    opacity: 0;
+
+    & + .input__label {
+      position: relative;
+      cursor: pointer;
+      padding-left: 1.5em;
+    }
+
+    & + .input__label:before {
+      content: '';
+      position: absolute;
+      width: 1em;
+      height: 1em;
+      top: 0;
+      left: 0;
+      background-color: transparent;
+      background-image: url('./components/input/checkbox--gray.svg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      transition: background var(--time) ease;
+    }
+
+    &:checked + .input__label:before {
+      content: '';
+      background-image: url('./components/input/checkbox--green-checked.svg');
+    }
+  }
+
+
   &__error {
     color: var(--text-color-red);
   }
