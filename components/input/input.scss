@@ -47,7 +47,7 @@
     }
   }
 
-  &__checkbox {
+  &__checkbox, &__radio {
     position: absolute;
     font-family: inherit;
     appearance: none;
@@ -69,7 +69,6 @@
       top: 0;
       left: 0;
       background-color: transparent;
-      background-image: url('./components/input/checkbox--gray.svg');
       background-position: center center;
       background-repeat: no-repeat;
       background-size: 100%;
@@ -78,7 +77,26 @@
 
     &:checked + .input__label:before {
       content: '';
+    }
+  }
+
+  &__checkbox {
+    & + .input__label:before {
+      background-image: url('./components/input/checkbox--gray.svg');
+    }
+
+    &:checked + .input__label:before {
       background-image: url('./components/input/checkbox--green-checked.svg');
+    }
+  }
+
+  &__radio {
+    & + .input__label:before {
+      background-image: url('./components/input/radio--gray.svg');
+    }
+
+    &:checked + .input__label:before {
+      background-image: url('./components/input/radio--green-checked.svg');
     }
   }
 
