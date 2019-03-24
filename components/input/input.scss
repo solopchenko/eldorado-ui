@@ -121,9 +121,15 @@
   }
 
   &__error {
-    display: inline-block;
+    display: block;
     margin: var(--input-margin) 0 0 0;
     color: var(--text-color-red);
+  }
+
+  &__caption {
+    display: block;
+    margin: var(--input-margin) 0 0 0;
+    color: var(--text-color-light);
   }
 
   &--invalid {
