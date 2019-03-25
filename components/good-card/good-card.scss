@@ -1,0 +1,61 @@
+.good-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 220px;
+  margin-left: 20px;
+  padding: var(--good-card-padding);
+  border: 1px solid var(--color-gray);
+  border-radius: 2px;
+  font: var(--font-main);
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &__header { }
+
+  &__picture {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--text-color-main);
+  }
+
+  &__image {
+    max-width: 100%;
+    height: 180px;
+  }
+
+  &__rating {
+    margin: 10px 0;
+  }
+
+  &__title {
+    display: -webkit-box;
+    margin: 10px 0 20px 0;
+    color: var(--text-color-main);
+    font-size: 12px;
+    line-height: 1.2;
+    border-bottom: none;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  &__shield { }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    vertical-align: baseline;
+    margin-top: 20px;
+  }
+
+  &__price { }
+
+  &__cart-button { }
+}
