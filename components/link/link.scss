@@ -1,0 +1,25 @@
+.link {
+  text-decoration: none;
+  color: var(--text-color-green);
+  border-bottom: 1px solid currentColor;
+  transition: color, border var(--time) ease;
+
+  &--underline {
+    border-bottom-style: solid;
+  }
+
+  &--dotted {
+    border-bottom-style: dotted;
+  }
+
+  &--same-color {
+    color: currentColor;
+    border-bottom-color: currentColor;
+
+    &:hover,
+    &:active {
+      color: var(--text-color-green);
+      border-bottom-color: var(--color-green);
+    }
+  }
+}
