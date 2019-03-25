@@ -1,0 +1,25 @@
+.label {
+  padding: 2px 8px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  cursor: default;
+  white-space: nowrap;
+  font: var(--font-main);
+  color: var(--text-color-white);
+  background-color: var(--color-green);
+
+  &--green {
+    color: var(--text-color-white);
+    background-color: var(--color-green);
+  }
+
+  &--yellow {
+    color: var(--text-color-black);
+    background-color: var(--color-yellow);
+  }
+
+  &--red {
+    color: var(--text-color-white);
+    background-color: var(--color-red);
+  }
+}
