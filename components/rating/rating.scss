@@ -1,6 +1,7 @@
 .rating {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   font: var(--font-main);
 
   &__star {
