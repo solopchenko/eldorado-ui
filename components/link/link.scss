@@ -2,7 +2,7 @@
   text-decoration: none;
   color: var(--text-color-green);
   border-bottom: 1px solid currentColor;
-  transition: color, border var(--time) ease;
+  transition: color var(--time) ease, border var(--time) ease;
 
   &--underline {
     border-bottom-style: solid;
