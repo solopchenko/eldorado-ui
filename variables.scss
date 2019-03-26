@@ -27,6 +27,11 @@ $interfaceYellow: #FFE066;
   --font-main: normal 12px/1.4 var(--main-font-family);
   --font-secondary: normal 11px/1.4 var(--main-font-family);
 
+  --title-size-xl: 34px;
+  --title-size-l: 30px;
+  --title-size-m: 24px;
+  --title-size-s: 20px;
+
   --text-color-main: #{$textMain};
   --text-color-dark: #{$textDark};
   --text-color-medium: #{$textMedium};

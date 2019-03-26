@@ -11,35 +11,6 @@ h4 { font-size: 20px; }
 
 p { font: var(--font-main); }
 
-.title {
-  color: var(--text-color-main);
-  font-family: var(--main-font-family);
-  font-weight: bold;
-
-  &--type_black {
-    font-family: var(--price-font-family);
-    font-stretch: condensed;
-  }
-  &--color_dark {
-    color: var(--text-color-dark);
-  }
-  &--color_medium {
-    color: var(--text-color-medium);
-  }
-  &--color_gray {
-    color: var(--text-color-gray);
-  }
-  &--color_light {
-    color: var(--text-color-light);
-  }
-  &--color_white {
-    color: var(--text-color-white);
-  }
-  &--color_green {
-    color: var(--text-color-green);
-  }
-}
-
 .text {
   font: var(--font-main);
 
