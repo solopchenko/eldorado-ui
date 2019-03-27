@@ -1,0 +1,19 @@
+.bonus {
+  padding: 5px 5px 5px 2em;
+  color: var(--text-color-dark);
+  background-image: url('./components/bonus/bonus--green.svg');
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 1.5em;
+
+  &__amount {
+    font-weight: bold;
+  }
+
+  &__link {
+    &:hover,
+    &:active {
+      color: currentColor;
+    }
+  }
+}
