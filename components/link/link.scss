@@ -3,6 +3,11 @@
   color: var(--text-color-green);
   border-bottom: 1px solid currentColor;
   transition: color var(--time) ease, border var(--time) ease;
+  &:hover,
+  &:active {
+    color: var(--text-color-green);
+    border-bottom-color: var(--color-green);
+  }
 
   &--underline {
     border-bottom-style: solid;
@@ -12,14 +17,15 @@
     border-bottom-style: dotted;
   }
 
+  &--green {
+    color: var(--text-color-green);
+  }
+
+  &--blue {
+    color: var(--text-color-blue);
+  }
+
   &--same-color {
     color: currentColor;
-    border-bottom-color: currentColor;
-
-    &:hover,
-    &:active {
-      color: var(--text-color-green);
-      border-bottom-color: var(--color-green);
-    }
   }
 }
