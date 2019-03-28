@@ -1,0 +1,14 @@
+.eldocard {
+  display: inline-block;
+  padding: 5px 5px 5px 2em;
+  font: var(--font-main);
+  color: var(--text-color-dark);
+  background-image: url('./components/eldocard/eldocard.svg');
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 1.5em;
+
+  &__amount {
+    font-weight: bold;
+  }
+}
