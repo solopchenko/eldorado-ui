@@ -8,6 +8,8 @@
   background-color: var(--color-white);
   color: var(--text-color-main);
   text-decoration: none;
+  transition: color var(--time) ease;
+
   &:hover,
   &:active {
     color: var(--text-color-green);
