@@ -1,0 +1,71 @@
+.good-listing {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border: 1px solid var(--color-gray);
+  border-radius: 2px;
+  color: var(--text-color-dark);
+
+  &__picture {
+    width: 250px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 20px 0;
+
+    &-link {
+      text-decoration: none;
+      border: none;
+    }
+
+    &-img {
+      max-width: 200px;
+      max-height: 250px;
+    }
+  }
+
+  &__info {
+    width: 75%;
+    padding: 20px 0;
+  }
+
+  &__buy {
+    width: 25%;
+    min-width: 270px;
+    background-color: var(--color-light-2);
+    border-left: 1px solid var(--color-gray);
+    padding: 20px 0;
+  }
+
+  &__section {
+    margin: 15px 20px;
+
+    &--line {
+      margin: 0;
+      padding: 15px 20px;
+      border: 1px solid var(--color-gray);
+      border-width: 1px 0 1px 0;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    font: var(--font-section);
+    border-bottom: none;
+    color: inherit;
+  }
+
+  &__buy-button {
+    margin: 10px 0;
+  }
+
+  &__shield {
+    margin: 10px 10px 0 0;
+  }
+}

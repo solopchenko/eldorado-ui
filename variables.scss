@@ -11,6 +11,7 @@ $textBlue: #0F68BF;
 
 $interfaceBlack: #262626;
 $interfaceLight: #EFEFEF;
+$interfaceLight2: #FCFCFC;
 $interfaceGray: #D9D9D9;
 $interfaceGreen: #76BC21;
 $interfaceRed: #E01E3E;
@@ -50,6 +51,7 @@ $interfaceYellow: #FFE066;
   --color-white: #{$interfaceWhite};
   --color-yellow: #{$interfaceYellow};
   --color-light: #{$interfaceLight};
+  --color-light-2: #{$interfaceLight2};
 
   --price-font-family: DINPro, Helvetica, Arial, sans-serif;
   --price--color-main: #{$textMain};

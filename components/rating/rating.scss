@@ -1,6 +1,5 @@
 .rating {
   display: flex;
-  justify-content: space-between;
   align-items: baseline;
   font: var(--font-main);
 
@@ -32,6 +31,14 @@
 
   &__count-link {
     border-bottom-color: transparent;
+  }
+
+  &--wide {
+    justify-content: space-between;
+
+    .rating__value {
+      margin-right: 0;
+    }
   }
 
   &--size_s {
