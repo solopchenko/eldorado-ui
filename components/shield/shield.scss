@@ -8,6 +8,10 @@
   background-color: var(--color-white);
   color: var(--text-color-main);
   text-decoration: none;
+  &:hover,
+  &:active {
+    color: var(--text-color-green);
+  }
 
   &__icon {
     max-height: 40px;
