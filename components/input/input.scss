@@ -80,10 +80,6 @@
       background-size: 100%;
       transition: background var(--time) ease;
     }
-
-    &:checked + .input__label:before {
-      content: '';
-    }
   }
 
   &__checkbox {
