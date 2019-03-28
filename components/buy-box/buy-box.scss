@@ -1,0 +1,33 @@
+.buy-box {
+  position: relative;
+  width: 320px;
+  box-sizing: border-box;
+  border: 1px solid var(--color-gray);
+  box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
+  font: var(--font-main);
+  color: var(--text-color-dark);
+
+  &__section {
+    padding: 0 var(--buy-box-padding);
+    margin: var(--buy-box-padding) 0;
+
+    &--line {
+      padding: calc( var(--buy-box-padding) / 2) var(--buy-box-padding);
+      border: 1px solid var(--color-gray);
+      border-left: none;
+      border-right: none;
+    }
+  }
+
+  &__action-110 {
+    position: absolute;
+    right: var(--buy-box-padding);
+    top: calc(var(--buy-box-padding) + 1em);
+    font: var(--font-secondary);
+    color: var(--text-color-light);
+  }
+
+  &__fast-order {
+    text-align: center;
+  }
+}
