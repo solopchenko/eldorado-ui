@@ -1,0 +1,15 @@
+.icon {
+  display: inline-block;
+  height: 1.5em;
+  background-size: 1.5em;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  &--add-to-cart-white {
+    background-image: url('./components/icon/add-to-cart--white.svg');
+  }
+
+  &--already-in-cart-white {
+    background-image: url('./components/icon/already-in-cart--white.svg');
+  }
+}
