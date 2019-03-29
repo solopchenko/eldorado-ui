@@ -1,5 +1,7 @@
 .button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   overflow: hidden;
   min-height: 50px;
@@ -12,10 +14,17 @@
   padding: 0 20px;
   font: bold 16px/1 var(--main-font-family);
   line-height: 1;
-  text-align: center;
   color: var(--text-color-white);
   background-color: var(--color-green);
   transform: translate3d(0, 0, 0);
+
+  &__icon {
+    height: 2.5em;
+    background-size: 2.5em;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+  }
 
   &:after {
     content: "";
