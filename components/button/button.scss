@@ -19,11 +19,12 @@
   transform: translate3d(0, 0, 0);
 
   &__icon {
+    width: 2.5em;
     height: 2.5em;
     background-size: 2.5em;
     background-position: center;
     background-repeat: no-repeat;
-    margin-right: 10px;
+    margin-right: 5px;
   }
 
   &:after {
