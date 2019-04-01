@@ -22,6 +22,7 @@
     padding: var(--input-padding);
     font: inherit;
     color: var(--text-color-main);
+    -webkit-appearance: none;
 
     &:focus {
       border-color: var(--color-green);
