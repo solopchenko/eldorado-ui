@@ -1,0 +1,32 @@
+.breadcrumbs {
+  font: var(--font-secondary);
+  color: var(--text-color-light);
+  cursor: default;
+
+  &__link {
+    white-space: nowrap;
+    color: currentColor;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    &:hover {
+      color: currentColor;
+      border-bottom-color: currentColor;
+    }
+  }
+
+  &__element {
+    white-space: nowrap;
+  }
+
+  &--size_l {
+    font: var(--font-section);
+  }
+
+  &--size_m {
+    font: var(--font-main);
+  }
+
+  &--size_s {
+    font: var(--font-secondary);
+  }
+}
