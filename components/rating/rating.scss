@@ -1,6 +1,7 @@
 .rating {
   display: flex;
   align-items: baseline;
+  white-space: nowrap;
   font: var(--font-main);
   cursor: default;
 
