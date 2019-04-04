@@ -2,6 +2,7 @@
   display: inline-block;
   padding: 5px 5px 5px 2em;
   font: var(--font-main);
+  font-weight: bold;
   color: var(--text-color-dark);
   background-image: url('./components/eldocard/eldocard.svg');
   background-position: left center;
@@ -9,6 +10,12 @@
   background-size: 1.5em;
 
   &__amount {
+    white-space: nowrap;
     font-weight: bold;
+  }
+
+  &__notes {
+    color: var(--text-color-light);
+    font-weight: normal;
   }
 }
