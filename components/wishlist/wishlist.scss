@@ -1,0 +1,21 @@
+.wishlist {
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px 5px 5px 2em;
+  color: var(--text-color-light);
+  background-image: url('./components/wishlist/wishlist.svg');
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 1.5em;
+  transition: color var(--time) ease, background var(--time) ease;
+
+  &:hover {
+    color: var(--text-color-green);
+    background-image: url('./components/wishlist/wishlist--green.svg');
+  }
+
+  &--active {
+    color: var(--text-color-green);
+    background-image: url('./components/wishlist/wishlist--green.svg');
+  }
+}
