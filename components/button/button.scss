@@ -179,4 +179,25 @@
       background-color: lighten($interfaceYellow, 20%);
     }
   }
+  &--type_link {
+    background-color: transparent;
+    color: var(--text-color-green);
+
+    &:after {
+      background: none;
+    }
+
+    &:hover {
+      background-color: transparent;
+    }
+
+    &:active {
+      background-color: transparent;
+    }
+
+    &:disabled {
+      background-color: transparent;
+      color: lighten($textGreen, 20%);
+    }
+  }
 }
