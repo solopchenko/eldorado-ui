@@ -46,10 +46,12 @@
 
   &:hover {
     background-color: saturate($interfaceGreen, 10%);
+    border-color: transparent;
   }
 
   &:active {
     background-color: desaturate($interfaceGreen, 10%);
+    border-color: transparent;
     &:after {
       opacity: .2;
       transform: scale(0,0);
@@ -60,6 +62,7 @@
   &:disabled {
     cursor: not-allowed;
     background-color: lighten($interfaceGreen, 20%);
+    border-color: inherit;
   }
 
   &--size_l {
