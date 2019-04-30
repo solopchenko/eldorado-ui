@@ -48,6 +48,11 @@
       border-width: 1px 0 1px 0;
     }
 
+    &--space-between {
+      display: flex;
+      justify-content: space-between;
+    }
+
     &:first-child {
       margin-top: 0;
     }
