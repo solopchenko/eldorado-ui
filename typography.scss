@@ -45,6 +45,9 @@ h4 { font-size: 20px; }
   &--size_s {
     font-size: var(--title-size-s);
   }
+  &--color_black {
+    color: var(--text-color-main);
+  }
   &--color_main {
     color: var(--text-color-main);
   }
@@ -68,6 +71,9 @@ h4 { font-size: 20px; }
   }
   &--color_red {
     color: var(--text-color-red);
+  }
+  &--color_blue {
+    color: var(--text-color-blue);
   }
 }
 
@@ -89,13 +95,30 @@ p { font: var(--font-main); }
     font: var(--font-title);
   }
   &--paragraph {
-    font: var(--font-title);
+    font: var(--font-main);
   }
   &--secondary {
     font: var(--font-secondary);
   }
-  &--highlight {
-    font-weight: bold;
+  %--hilight {
+    padding: 2px 4px;
+    border-radius: 2px;
+  }
+  &--highlight_green {
+    @extend %--hilight;
+    background-color: lighten($interfaceGreen, 40%);
+  }
+  &--highlight_red {
+    @extend %--hilight;
+    background-color: lighten($interfaceRed, 40%);
+  }
+  &--highlight_yellow {
+    @extend %--hilight;
+    background-color: lighten($interfaceYellow, 10%);
+  }
+  &--highlight_black {
+    @extend %--hilight;
+    background-color: var(--color-black);
   }
   &--bold {
     font-weight: bold;
@@ -104,6 +127,9 @@ p { font: var(--font-main); }
     color: var(--text-color-red);
   }
   &--color_main {
+    color: var(--text-color-main);
+  }
+  &--color_black {
     color: var(--text-color-main);
   }
   &--color_dark {
@@ -126,5 +152,8 @@ p { font: var(--font-main); }
   }
   &--color_red {
     color: var(--text-color-red);
+  }
+  &--color_blue {
+    color: var(--text-color-blue);
   }
 }
