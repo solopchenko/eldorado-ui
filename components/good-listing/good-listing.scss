@@ -38,6 +38,15 @@
     padding: 20px 0;
   }
 
+  &__rating {
+    display: inline-flex;
+    margin-right: 20px;
+  }
+
+  &__art {
+    color: var(--text-color-light);
+  }
+
   &__section {
     margin: 15px 20px;
 
