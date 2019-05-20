@@ -1,21 +1,30 @@
 .bonus {
-  display: inline-block;
   padding: 5px 5px 5px 2em;
-  color: var(--text-color-dark);
   background-image: url('./components/bonus/bonus--green.svg');
   background-position: left center;
   background-repeat: no-repeat;
-  background-size: 1.5em;
+  background-size: 1.8em;
 
   &__amount {
+    color: currentColor;
     font-weight: bold;
   }
 
-  &__link {
-    &:hover,
-    &:active {
-      color: currentColor;
-      border-bottom-color: currentColor;
+  &__link { }
+
+  &__info {
+    color: var(--text-color-light);
+  }
+
+  &--extended {
+    padding-left: calc(1.8em - 2px);
+    background-image: none;
+    line-height: 1.6;
+
+    .bonus__amount {
+      padding: 2px 5px;
+      border-radius: 2px;
+      background: var(--color-yellow);
     }
   }
 }
