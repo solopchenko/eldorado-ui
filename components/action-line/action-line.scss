@@ -1,0 +1,33 @@
+.action-line {
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 0 var(--good-card-padding) 0 0;
+  font-family: var(--price-font-family);
+  font-size: var(--title-size-s);
+  line-height: 2em;
+  text-transform: uppercase;
+
+  &__discount {
+    position: relative;
+    width: 50px;
+    background-color: var(--color-green);
+    color: var(--text-color-white);
+    text-align: center;
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 2em;
+      border-left: 25px solid var(--color-green);
+      border-top: 12px solid var(--color-green);
+      border-right: 25px solid transparent;
+      border-bottom: 12px solid transparent;
+    }
+  }
+
+  &__name { }
+
+  &__timer {
+    color: var(--text-color-light);
+  }
+}
