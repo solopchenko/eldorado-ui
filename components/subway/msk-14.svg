@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="140" width="140">
+  <circle class="circle" cx="70" cy="70" r="70" stroke-width="1" fill="#ee2722" />
+  <circle class="circle" cx="70" cy="70" r="60" stroke-width="1" fill="#fff" />
+  <circle class="circle" cx="70" cy="70" r="50" stroke-width="1" fill="#ee2722" />
+  <circle class="circle" cx="70" cy="70" r="40" stroke-width="1" fill="#fff" />
+</svg>
