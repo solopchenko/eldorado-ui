@@ -1,54 +1,69 @@
 .subway {
   display: inline-block;
-  padding-left: 1em;
+  padding-left: 1.2em;
   background-image: none;
-  background-position: left center;
+  background-position: 0 40%;
   background-repeat: no-repeat;
   background-size: 0.8em;
 
   &--msk-1 {
-    background-image: url('components/subway/msk-1.svg');
+    background-image: url('components/subway/msk/msk-1.svg');
   }
   &--msk-2 {
-    background-image: url('components/subway/msk-2.svg');
+    background-image: url('components/subway/msk/msk-2.svg');
   }
   &--msk-3 {
-    background-image: url('components/subway/msk-3.svg');
+    background-image: url('components/subway/msk/msk-3.svg');
   }
   &--msk-4 {
-    background-image: url('components/subway/msk-4.svg');
+    background-image: url('components/subway/msk/msk-4.svg');
   }
   &--msk-5 {
-    background-image: url('components/subway/msk-5.svg');
+    background-image: url('components/subway/msk/msk-5.svg');
   }
   &--msk-6 {
-    background-image: url('components/subway/msk-6.svg');
+    background-image: url('components/subway/msk/msk-6.svg');
   }
   &--msk-7 {
-    background-image: url('components/subway/msk-7.svg');
+    background-image: url('components/subway/msk/msk-7.svg');
   }
   &--msk-8 {
-    background-image: url('components/subway/msk-8.svg');
+    background-image: url('components/subway/msk/msk-8.svg');
   }
   &--msk-9 {
-    background-image: url('components/subway/msk-9.svg');
+    background-image: url('components/subway/msk/msk-9.svg');
   }
   &--msk-10 {
-    background-image: url('components/subway/msk-10.svg');
+    background-image: url('components/subway/msk/msk-10.svg');
   }
   &--msk-11 {
-    background-image: url('components/subway/msk-11.svg');
+    background-image: url('components/subway/msk/msk-11.svg');
   }
   &--msk-12 {
-    background-image: url('components/subway/msk-12.svg');
+    background-image: url('components/subway/msk/msk-12.svg');
   }
   &--msk-13 {
-    background-image: url('components/subway/msk-13.svg');
+    background-image: url('components/subway/msk/msk-13.svg');
   }
   &--msk-14 {
-    background-image: url('components/subway/msk-14.svg');
+    background-image: url('components/subway/msk/msk-14.svg');
   }
   &--msk-15 {
-    background-image: url('components/subway/msk-15.svg');
+    background-image: url('components/subway/msk/msk-15.svg');
+  }
+  &--spb-1 {
+    background-image: url('components/subway/spb/spb-1.svg');
+  }
+  &--spb-2 {
+    background-image: url('components/subway/spb/spb-2.svg');
+  }
+  &--spb-3 {
+    background-image: url('components/subway/spb/spb-3.svg');
+  }
+  &--spb-4 {
+    background-image: url('components/subway/spb/spb-4.svg');
+  }
+  &--spb-5 {
+    background-image: url('components/subway/spb/spb-5.svg');
   }
 }
