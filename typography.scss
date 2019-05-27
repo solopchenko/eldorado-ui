@@ -79,6 +79,11 @@ h4 { font-size: 20px; }
 
 p { font: var(--font-main); }
 
+%--text-hilight-type {
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+
 .text {
   font: var(--font-main);
 
@@ -100,24 +105,20 @@ p { font: var(--font-main); }
   &--secondary {
     font: var(--font-secondary);
   }
-  %--hilight {
-    padding: 2px 4px;
-    border-radius: 2px;
-  }
   &--highlight_green {
-    @extend %--hilight;
+    @extend %--text-hilight-type;
     background-color: lighten($interfaceGreen, 40%);
   }
   &--highlight_red {
-    @extend %--hilight;
+    @extend %--text-hilight-type;
     background-color: lighten($interfaceRed, 40%);
   }
   &--highlight_yellow {
-    @extend %--hilight;
+    @extend %--text-hilight-type;
     background-color: lighten($interfaceYellow, 10%);
   }
   &--highlight_black {
-    @extend %--hilight;
+    @extend %--text-hilight-type;
     background-color: var(--color-black);
   }
   &--bold {
