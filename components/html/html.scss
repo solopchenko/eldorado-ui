@@ -2,4 +2,5 @@ body {
   margin: 0;
   font: var(--font-main);
   -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
 }
