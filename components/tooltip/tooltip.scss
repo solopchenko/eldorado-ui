@@ -3,7 +3,7 @@
   box-sizing: border-box;
   border-bottom: 1px dotted var(--color-green);
   padding: 0 1px;
-  cursor: pointer;
+  cursor: help;
 
   &:hover {
     background-color: lighten($interfaceGreen, 40%);
