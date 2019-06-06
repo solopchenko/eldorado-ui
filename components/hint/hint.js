@@ -16,7 +16,7 @@ class Hint {
       this.hint.classList.remove('hint--show');
     }
 
-    hint.addEventListener('click', this.toggle);
+    this.hint.addEventListener('click', this.toggle);
     hint__close.addEventListener('click', this.toggle);
     hint__content.addEventListener('click', (event) => { event.stopPropagation(); });
   }
