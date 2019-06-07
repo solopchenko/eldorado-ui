@@ -83,4 +83,11 @@
   &__shield {
     margin: 10px 10px 0 0;
   }
+
+  &--action {
+    .good-listing__picture,
+    .good-listing__info {
+      padding-top: 60px;
+    }
+  }
 }

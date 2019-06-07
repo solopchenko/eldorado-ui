@@ -1,13 +1,12 @@
 .action-line {
-  display: inline-flex;
-  justify-content: space-between;
-  padding: 0 var(--good-card-padding) 0 0;
+  position: absolute;
   font-family: var(--price-font-family);
   font-size: var(--title-size-s);
   line-height: 2em;
   text-transform: uppercase;
 
   &__discount {
+    display: inline-block;
     position: relative;
     width: 50px;
     background-color: var(--color-green);
