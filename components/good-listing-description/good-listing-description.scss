@@ -1,20 +1,16 @@
 .good-listing-description {
+  color: var(--text-color-light);
   &__group {
     margin: 10px 0;
   }
 
   &__group-title {
     font-weight: bold;
-    color: var(--text-color-gray);
   }
 
   &__row { }
 
-  &__unit {
-    color: var(--text-color-light);
-  }
+  &__unit { }
 
-  &__value {
-    color: var(--text-color-light);
-  }
+  &__value { }
 }
