@@ -22,6 +22,7 @@
     }
 
     &-img {
+      width: 100%;
       max-width: 200px;
       max-height: 200px;
     }
@@ -79,7 +80,7 @@
 
   &__title {
     font: var(--font-section);
-    word-break: break-all;
+    word-break: break-word;
     border-bottom: none;
     color: inherit;
   }
