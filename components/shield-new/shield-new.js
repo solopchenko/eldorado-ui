@@ -26,4 +26,4 @@ class ShieldNew {
   }
 }
 
-window.shields = ShieldNew.createShields();
+window.newShields = ShieldNew.createShields();
