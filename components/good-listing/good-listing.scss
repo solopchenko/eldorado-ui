@@ -8,7 +8,7 @@
   font: var(--font-main);
 
   &__picture {
-    width: 250px;
+    min-width: 150px;
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
@@ -27,12 +27,12 @@
   }
 
   &__info {
-    width: 75%;
+    min-width: 270px;
+    max-width: 420px;
     padding: 20px 0;
   }
 
   &__buy {
-    width: 25%;
     min-width: 270px;
     background-color: var(--color-light-2);
     border-left: 1px solid var(--color-gray);
@@ -73,6 +73,7 @@
 
   &__title {
     font: var(--font-section);
+    word-break: break-all;
     border-bottom: none;
     color: inherit;
   }
@@ -86,8 +87,10 @@
   }
 
   &--action {
+    border-color: var(--color-green);
     .good-listing__picture,
-    .good-listing__info {
+    .good-listing__info,
+    .good-listing__buy {
       padding-top: 60px;
     }
   }
