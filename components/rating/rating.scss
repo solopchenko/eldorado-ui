@@ -1,14 +1,14 @@
 .rating {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   white-space: nowrap;
   font: var(--font-main);
   cursor: default;
 
   &__star {
     display: inline-block;
-    width: 1em;
-    height: 1em;
+    width: 1.2em;
+    height: 1.2em;
     background-image: url('./components/rating/star--full.svg');
     background-position: center center;
     background-repeat: no-repeat;
