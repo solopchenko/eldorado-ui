@@ -8,6 +8,7 @@
   font: var(--font-main);
 
   &__picture {
+    position: relative;
     width: 20%;
     min-width: 150px;
     display: flex;
@@ -92,10 +93,5 @@
 
   &--action {
     border-color: var(--color-green);
-    .good-listing__picture,
-    .good-listing__info,
-    .good-listing__buy {
-      padding-top: 60px;
-    }
   }
 }
