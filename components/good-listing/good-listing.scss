@@ -8,10 +8,12 @@
   font: var(--font-main);
 
   &__picture {
+    width: 20%;
     min-width: 150px;
     display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
     padding: 20px 0;
 
     &-link {
@@ -20,23 +22,27 @@
     }
 
     &-img {
-      width: 100%;
-      min-width: 100px;
       max-width: 200px;
+      max-height: 200px;
     }
   }
 
   &__info {
-    min-width: 270px;
-    max-width: 420px;
+    width: 50%;
     padding: 20px 0;
   }
 
   &__buy {
+    width: 30%;
     min-width: 270px;
     background-color: var(--color-light-2);
     border-left: 1px solid var(--color-gray);
     padding: 20px 0;
+  }
+
+  &__shields {
+    text-align: center;
+    &-title { }
   }
 
   &__rating {
@@ -79,11 +85,7 @@
   }
 
   &__buy-button {
-    margin: 10px 0;
-  }
-
-  &__shield {
-    margin: 10px 10px 0 0;
+    margin-bottom: 10px;
   }
 
   &--action {

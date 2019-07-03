@@ -1,4 +1,4 @@
-export default class ShieldNew {
+class ShieldNew {
   constructor(shield) {
     this.shield = shield;
 
