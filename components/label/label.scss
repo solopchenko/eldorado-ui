@@ -1,6 +1,7 @@
 .label {
   padding: 2px 8px;
   box-sizing: border-box;
+  border: 1px solid;
   border-radius: 2px;
   cursor: default;
   white-space: nowrap;
@@ -11,15 +12,45 @@
   &--green {
     color: var(--text-color-white);
     background-color: var(--color-green);
+    border-color: var(--color-green);
+  }
+
+  &--outline-green {
+    background-color: transparent;
+    color: var(--text-color-green);
+    border-color: var(--color-green);
   }
 
   &--yellow {
     color: var(--text-color-black);
     background-color: var(--color-yellow);
+    border-color: var(--color-yellow);
+  }
+
+  &--outline-yellow {
+    background-color: transparent;
+    color: var(--text-color-yellow);
+    border-color: var(--color-orange);
   }
 
   &--red {
     color: var(--text-color-white);
     background-color: var(--color-red);
+    border-color: var(--color-red);
+  }
+
+  &--outline-red {
+    background-color: transparent;
+    color: var(--text-color-red);
+    border-color: var(--color-red);
+  }
+
+  &--wide {
+    display: block;
+    width: 100%;
+  }
+
+  &--center {
+    text-align: center;
   }
 }

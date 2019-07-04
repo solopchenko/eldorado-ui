@@ -8,6 +8,8 @@ $textRed: #E01E3E;
 $textYellow: #F69E41;
 $textWhite: #FFFFFF;
 $textBlue: #0F68BF;
+$textOrange: #F69E41;
+
 
 $interfaceBlack: #262626;
 $interfaceLight: #EFEFEF;
@@ -17,6 +19,8 @@ $interfaceGreen: #76BC21;
 $interfaceRed: #E01E3E;
 $interfaceWhite: #FFFFFF;
 $interfaceYellow: #FFE066;
+$interfaceOrange: #F69E41;
+
 
 :root {
 
@@ -40,6 +44,7 @@ $interfaceYellow: #FFE066;
   --text-color-green: #{$textGreen};
   --text-color-red: #{$textRed};
   --text-color-yellow: #{$textYellow};
+  --text-color-orange: #{$textOrange};
   --text-color-white: #{$textWhite};
   --text-color-blue: #{$textBlue};
 
@@ -49,6 +54,7 @@ $interfaceYellow: #FFE066;
   --color-gray: #{$interfaceGray};
   --color-white: #{$interfaceWhite};
   --color-yellow: #{$interfaceYellow};
+  --color-orange: #{$interfaceOrange};
   --color-light: #{$interfaceLight};
   --color-light-2: #{$interfaceLight2};
 
