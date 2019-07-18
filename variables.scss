@@ -10,7 +10,6 @@ $textWhite: #FFFFFF;
 $textBlue: #0F68BF;
 $textOrange: #F69E41;
 
-
 $interfaceBlack: #262626;
 $interfaceLight: #EFEFEF;
 $interfaceLight2: #FCFCFC;
@@ -21,13 +20,12 @@ $interfaceWhite: #FFFFFF;
 $interfaceYellow: #FFE066;
 $interfaceOrange: #F69E41;
 
-
 :root {
-
+  --price-font-family: DINPro, Helvetica, Arial, sans-serif;
   --main-font-family: Graphik_LC, Helvetica, Arial, sans-serif;
-  --font-introduction: normal 18px/1.2 var(--main-font-family);
-  --font-section: normal 16px/1.2 var(--main-font-family);
-  --font-title: normal 14px/1.2 var(--main-font-family);
+  --font-introduction: normal 18px/1.4 var(--main-font-family);
+  --font-section: normal 16px/1.4 var(--main-font-family);
+  --font-title: normal 14px/1.4 var(--main-font-family);
   --font-main: normal 12px/1.4 var(--main-font-family);
   --font-secondary: normal 11px/1.4 var(--main-font-family);
 
@@ -48,7 +46,6 @@ $interfaceOrange: #F69E41;
   --text-color-white: #{$textWhite};
   --text-color-blue: #{$textBlue};
 
-  --color-black: #{$interfaceBlack};
   --color-green: #{$interfaceGreen};
   --color-red: #{$interfaceRed};
   --color-gray: #{$interfaceGray};
@@ -58,7 +55,6 @@ $interfaceOrange: #F69E41;
   --color-light: #{$interfaceLight};
   --color-light-2: #{$interfaceLight2};
 
-  --price-font-family: DINPro, Helvetica, Arial, sans-serif;
   --price--color-main: #{$textMain};
   --price--color-old: #{$textLight};
   --price--color-discount: #{$textWhite};
@@ -66,13 +62,5 @@ $interfaceOrange: #F69E41;
   --price-font-size-m: 34px;
   --price-font-size-s: 30px;
 
-  --time: .2s;
   --border-radius: 2px;
-  --input-padding: 10px;
-  --input-margin: 10px;
-  --good-card-padding: 15px;
-  --buy-box-padding: 20px;
-  --popup-padding: 30px;
-
-  --z-index-popup: 3;
 }
