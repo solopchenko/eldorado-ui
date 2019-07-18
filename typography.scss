@@ -85,7 +85,8 @@ p { font: var(--font-main); }
 }
 
 .text {
-  font: var(--font-main);
+  font-family: var(--main-font-family);
+  line-height: 1.4;
 
   &--main {
     font: var(--font-main);
