@@ -64,11 +64,11 @@
   }
 
   &__section {
-    margin: 15px 20px;
+    padding: 5px 20px;
 
     &--line {
-      margin: 0;
-      padding: 15px 20px;
+      margin: 10px 0;
+      padding: 10px 20px;
       border: 1px solid var(--color-gray);
       border-width: 1px 0 1px 0;
     }
@@ -79,10 +79,10 @@
     }
 
     &:first-child {
-      margin-top: 0;
+      padding-top: 0;
     }
     &:last-child {
-      margin-bottom: 0;
+      padding-bottom: 0;
     }
   }
 
@@ -93,7 +93,7 @@
     color: inherit;
   }
 
-  &__discount-mark {
+  &__image-shield {
     position: absolute;
     left: 10px;
     top: 50px;
