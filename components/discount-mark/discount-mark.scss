@@ -1,0 +1,41 @@
+.discount-mark {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: var(--color-orange);
+  color: var(--text-color-white);
+  text-align: center;
+  border-radius: 50%;
+
+  &__value {
+    font-size: 22px;
+    line-height: 1;
+    font-weight: bold;
+  }
+
+  &__unit {
+    font-size: 12px;
+  }
+
+  &__action {
+    font-size: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &--color_orange {
+    background-color: var(--color-orange);
+  }
+  &--color_green {
+    background-color: var(--color-green);
+  }
+  &--color_yellow {
+    background-color: var(--color-yellow);
+  }
+  &--color_red {
+    background-color: var(--color-red);
+  }
+}
