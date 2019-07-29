@@ -45,11 +45,13 @@ $interfaceOrange: #F69E41;
   --text-color-orange: #{$textOrange};
   --text-color-white: #{$textWhite};
   --text-color-blue: #{$textBlue};
+  --text-color-black: #{$textMain};
 
   --color-green: #{$interfaceGreen};
   --color-red: #{$interfaceRed};
   --color-gray: #{$interfaceGray};
   --color-white: #{$interfaceWhite};
+  --color-black: #{$interfaceBlack};
   --color-yellow: #{$interfaceYellow};
   --color-orange: #{$interfaceOrange};
   --color-light: #{$interfaceLight};
@@ -63,6 +65,14 @@ $interfaceOrange: #F69E41;
   --price-font-size-s: 30px;
 
   --buy-box-padding: 20px;
+
+  --time: .2s;
+
+  --input-padding: 10px;
+  --input-margin: 10px;
+
+  --popup-padding: 30px;
+  --z-index-popup: 3;
 
   --border-radius: 2px;
 }
