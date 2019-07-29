@@ -1,3 +1,6 @@
+$popupPadding: 30px;
+$popupZIndex: 3;
+
 .popup {
 
   &__trigger {
@@ -13,9 +16,9 @@
     top: 0;
     width: 100%;
     height: 100%;
-    z-index: var(--z-index-popup);
+    z-index: $popupZIndex;
     background-color: rgba($interfaceBlack, 0.5);
-    transition: opacity var(--time) ease-in-out, visibility var(--time) ease-in-out;
+    transition: opacity $time ease-in-out, visibility $time ease-in-out;
   }
 
   &__modal {
@@ -26,8 +29,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: var(--popup-padding);
-    border-radius: var(--border-radius);
+    padding: $popupPadding;
+    border-radius: $borderRadius;
     background: linear-gradient(to bottom, var(--color-white) 80%, var(--color-light-2) 100%);
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
   }
@@ -36,10 +39,10 @@
     position: absolute;
     width: 20px;
     height: 20px;
-    right: calc(var(--popup-padding) / 2);
-    top: calc(var(--popup-padding) / 2);
+    right: calc(#{$popupPadding} / 2);
+    top: calc(#{$popupPadding} / 2);
     cursor: pointer;
-    transition: background-color var(--time) ease;
+    transition: background-color $time ease;
 
     &:hover {
       &::before, &::after {
