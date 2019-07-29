@@ -14,12 +14,12 @@
   }
 
   &__info {
-    padding-top: 15px;
+    padding-top: 10px;
   }
 
 
   &__bottom {
-    padding: 15px 0;
+    padding: 15px 0 10px 0;
   }
 
   &__section {
@@ -52,11 +52,13 @@
 
   &__picture {
     display: flex;
+    height: 100%;
     justify-content: center;
+    align-items: center;
     text-decoration: none;
     text-align: center;
     position: relative;
-    padding: 10px 0;
+    padding: 15px 15px 5px 15px;
   }
 
   &__image {
@@ -67,25 +69,31 @@
   &__rating { }
 
   &__title {
-    display: -webkit-box;
-    height: 50px;
     color: var(--text-color-main);
-    font-size: 12px;
-    line-height: 1.2;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
+    height: calc(12px * 1.2 * 3 + 5px);
 
     &-link {
+      display: -webkit-box;
       border-bottom: none;
+      line-height: 1.2;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
     }
+  }
+
+  &__shields {
+    display: flex;
+    height: 35px;
+    line-height: 1;
+    align-items: center;
   }
 
   &__image-shield {
     position: absolute;
     left: 15px;
-    top: -5px;
+    top: 15px;
   }
 
   &__buy {
