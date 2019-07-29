@@ -1,25 +1,30 @@
 .price {
+  font-family: $priceFontFamily;
   font-family: var(--price-font-family);
-  font-size: var(--price-font-size-m);
-  white-space: nowrap;
   line-height: 1.2;
+  white-space: nowrap;
+  font-size: 34px;
 
   &__old-price {
-    color: var(--price--color-old);
+    color: $textLight;
+    color: var(--text-color-light);
     text-decoration: line-through;
-    font-size: 24px;
+    font-size: 22px;
   }
 
   &__current-price {
-    color: var(--price--color-main);
+    color: $textMain;
+    color: var(--text-color-main);
   }
 
   &__discount {
     display: inline-block;
     margin-left: 10px;
     padding: 1px 5px;
-    border-radius: var(--border-radius);
+    border-radius: $borderRadius;
+    background-color: $interfaceGreen;
     background-color: var(--color-green);
+    color: $textWhite;
     color: var(--text-color-white);
     letter-spacing: 0.5px;
     font-size: 15px;
