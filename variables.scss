@@ -20,6 +20,9 @@ $interfaceWhite: #FFFFFF;
 $interfaceYellow: #FFE066;
 $interfaceOrange: #F69E41;
 
+$mainFontFamily: Graphik_LC, Helvetica, Arial, sans-serif;
+$priceFontFamily: DINPro, Helvetica, Arial, sans-serif;
+
 :root {
   --price-font-family: DINPro, Helvetica, Arial, sans-serif;
   --main-font-family: Graphik_LC, Helvetica, Arial, sans-serif;
@@ -67,9 +70,6 @@ $interfaceOrange: #F69E41;
   --buy-box-padding: 20px;
 
   --time: .2s;
-
-  --input-padding: 10px;
-  --input-margin: 10px;
 
   --popup-padding: 30px;
   --z-index-popup: 3;

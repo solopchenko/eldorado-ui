@@ -1,12 +1,15 @@
+$inputPadding: 10px;
+$inputMargin: 10px;
+
 .input {
   position: relative;
   box-sizing: border-box;
-  margin: var(--input-margin) 0;
+  margin: $inputMargin 0;
   font: var(--font-main);
 
   &__label {
     display: inline-block;
-    margin: 0 0 var(--input-margin) 0;
+    margin: 0 0 $inputMargin 0;
   }
 
   &__text,
@@ -19,7 +22,7 @@
     outline: none;
     border: 1px solid var(--color-gray);
     border-radius: 2px;
-    padding: var(--input-padding);
+    padding: $inputPadding;
     font: inherit;
     color: var(--text-color-main);
     appearance: none;
@@ -33,12 +36,12 @@
   }
 
   &__text {
-    margin: calc(1em + var(--input-margin) * 2) 0 0 0;
+    margin: calc(1em + #{$inputMargin} * 2) 0 0 0;
 
     & ~ .input__label {
       position: absolute;
-      top: var(--input-padding);
-      left: var(--input-padding);
+      top: $inputPadding;
+      left: $inputPadding;
       margin: 0;
       transition: all var(--time) ease;
       opacity: 1;
@@ -47,7 +50,7 @@
 
     &:focus ~ .input__label,
     &:valid ~ .input__label {
-      top: calc(-1em - var(--input-margin));
+      top: calc(-1em - #{$inputMargin});
       left: 0;
       opacity: 0.8;
     }
@@ -112,7 +115,7 @@
     text-overflow: ellipsis;
     background-color: var(--color-white);
     background-image: url('./components/input/select--gray.svg');
-    background-position: calc(100% - var(--input-padding)) center;
+    background-position: calc(100% - #{$inputPadding}) center;
     background-repeat: no-repeat;
     background-size: 1em;
 
@@ -129,13 +132,13 @@
 
   &__error {
     display: block;
-    margin: var(--input-margin) 0 0 0;
+    margin: $inputMargin 0 0 0;
     color: var(--text-color-red);
   }
 
   &__caption {
     display: block;
-    margin: var(--input-margin) 0 0 0;
+    margin: $inputMargin 0 0 0;
     color: var(--text-color-light);
   }
 
