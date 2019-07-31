@@ -1,27 +1,40 @@
 .link {
   text-decoration: none;
+  color: $textGreen;
   color: var(--text-color-green);
   border-bottom: 1px solid currentColor;
-  transition: color var(--time) ease, border var(--time) ease;
+  transition: color $time ease, border $time ease;
   &:hover,
   &:active {
+    color: $textGreen;
     color: var(--text-color-green);
-    border-bottom-color: var(--color-green);
   }
 
-  &--underline {
-    border-bottom-style: solid;
+  &--underline,
+  &--underline:hover,
+  &--underline:active {
+    border-bottom: 1px solid currentColor;
   }
 
-  &--dotted {
-    border-bottom-style: dotted;
+  &--dotted,
+  &--dotted:hover,
+  &--dotted:active {
+    border-bottom: 1px dotted currentColor;
+  }
+
+  &--non-underline,
+  &--non-underline:hover,
+  &--non-underline:active {
+    border-bottom: none;
   }
 
   &--green {
+    color: $textGreen;
     color: var(--text-color-green);
   }
 
   &--blue {
+    color: $textBlue;
     color: var(--text-color-blue);
   }
 
